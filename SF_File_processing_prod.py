@@ -1,4 +1,5 @@
 # Databricks notebook source
+#External lib installation
 databricks_artifacts_token = dbutils.secrets.get("key-vault-akv", key='databricks-artifacts-token')
 %pip install --index-url https://{databricks_artifacts_token}@pkgs.dev.azure.com/travelleadersgroup/MDM/_packaging/MDM_Feed/pypi/simple/ phonenumbers
 
